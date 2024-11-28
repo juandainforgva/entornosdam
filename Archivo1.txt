@@ -1,3 +1,6 @@
 Commit 2
 
 Cambio en la rama FIX
+
+
+Nuevo cambio añadido desde GitHub
