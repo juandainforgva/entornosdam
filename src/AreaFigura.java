@@ -1,31 +1,32 @@
 import java.util.Scanner;
 
 public class AreaFigura {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Bienvenido al calculador de áreas");
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Bienvenido al calculador de C!reas");
 
-        System.out.println("1. Calcular área de un rectángulo");
-        System.out.println("2. Calcular área de un círculo");
-        System.out.println("Ingrese su opción:");
-        int opcion = scanner.nextLine();
+		System.out.println("1. Calcular C!rea de un rectC!ngulo");
+		System.out.println("2. Calcular C!rea de un cC-rculo");
+		System.out.println("Ingrese su opciC3n:");
+		int opcion = scanner.nextInt();
 
-        if (opción == 1) {
-            System.out.println("Ingrese la base del rectángulo: ");
-            double base = scanner.nextInt(); // Error: Método incorrecto para leer decimales
-            System.out.println("Ingrese la altura del rectángulo: ");
-            double altura = scanner.next();
+		if (opcion == 1) {
+			System.out.println("Ingrese la base del rectC!ngulo: ");
+			double base = scanner.nextDouble();
+			System.out.println("Ingrese la altura del rectC!ngulo: ");
+			double altura = scanner.nextDouble();
 
-            double area = base * altura;
-            System.out.println("El área del rectángulo es " + area); // Error: Error al formatear salida
-        } else if (opcion = 2) { // Error: Asignación en lugar de comparación
-            System.out.println("Ingrese el radio del círculo: ");
-            double radio = scanner.nextInt(); // Error: Método incorrecto para leer decimales
+			double area = base * altura;
+			System.out.println("El C!rea del rectC!ngulo es " + area); 
+		} else if (opcion == 2) {
+			System.out.println("Ingrese el radio del cC-rculo: ");
+			double radio = scanner.nextDouble();
 
-            double area = 3.1416 * radio ^ 2;
-            System.out.println("El área del círculo es: " + area);
-        } else {
-            System.out.println("Opción inválida!"); // Error: No se cierra el scanner
-        }
-    }
+			double area = 3.1416 * Math.pow(radio,2);
+			System.out.println("El C!rea del cC-rculo es: " + area);
+		} else {
+			System.out.println("B!OpciC3n invC!lida!");
+		}
+		scanner.close();
+	}
 }
