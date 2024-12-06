@@ -1,1 +1,0 @@
-No se nada de JS
