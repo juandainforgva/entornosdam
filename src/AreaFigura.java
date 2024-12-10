@@ -8,9 +8,9 @@ public class AreaFigura {
         System.out.println("1. Calcular área de un rectángulo");
         System.out.println("2. Calcular área de un círculo");
         System.out.println("Ingrese su opción:");
-        int opcion = scanner.nextLine();
+        double opcion = scanner.nextLine();
 
-        if (opción == 1) {
+        if (opcion == 1) {
             System.out.println("Ingrese la base del rectángulo: ");
             double base = scanner.nextInt(); // Error: Método incorrecto para leer decimales
             System.out.println("Ingrese la altura del rectángulo: ");
@@ -18,7 +18,7 @@ public class AreaFigura {
 
             double area = base * altura;
             System.out.println("El área del rectángulo es " + area); // Error: Error al formatear salida
-        } else if (opcion = 2) { // Error: Asignación en lugar de comparación
+        } else if (opcion == 2) { // Error: Asignación en lugar de comparación
             System.out.println("Ingrese el radio del círculo: ");
             double radio = scanner.nextInt(); // Error: Método incorrecto para leer decimales
 
